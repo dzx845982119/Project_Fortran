@@ -1,0 +1,33 @@
+実行マニュアル
+2022/11/23　DONG ZIXU
+
+
+1.以下のファイルをダウンロードする
+  a.計算結果データ
+    https://app.box.com/s/44vmx28wx8uyzrdblmt8fxaywv4ppa0n
+
+  b.格子データ
+　　https://app.box.com/s/kikhvsz2d8vegr02yxzmlxw5f9jdezy2
+
+　c.入力ファイル
+　　https://app.box.com/s/ooiylm5vipiwrkaro48f4fdr57sg03xh
+
+  d.プログラム
+　　https://app.box.com/s/6wp3551mqh2ggv0ja9ttvebixrzk9kyj
+
+2．Linux環境から「g30m_u-y_sp.f90」をコンパイルする(Fortranコンパイラが必要)
+　　入力内容：
+　　gfortran g30m_u-y_sp.f90
+
+3.コンパイルされた実行ファイル「a.exe/a.out」に入力ファイル「uy.in」を入力する
+   入力内容：
+　 ./a.exe<uy.in
+
+4.結果ファイル「u0_B100S00A00t1000.txt」を開き、確認する。
+　フォーマット：
+　
+　　　　　行番　y座標(矢表面=0.5)　　　速度値u(矢表面=0)　速度値v(矢表面=0)
+　         1  0.49999999999999994        0.00000000       0.00000000    
+           2  0.50103914661386761        6.02984848E-03   1.59180900E-08
+           3  0.50212644359446024        1.23293437E-02   9.24367924E-08
+           4  0.50326412022241596        1.89062972E-02   2.27191705E-07
